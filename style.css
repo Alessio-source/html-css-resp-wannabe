@@ -72,6 +72,45 @@ img {
   clear: both;
 }
 
+/* media per ipad, ipad pro, tablet */
+@media screen and (max-width: 1024px) {
+  body {
+    font-size: 25px;
+  }
+
+  .row {
+    width: 100%;
+    margin: none;
+  }
+
+  #lezioni .row>.left,
+  #lezioni .row>.right {
+    width: calc(50% - 15px);
+    margin: 50px 5px;
+  }
+
+  #steps .row>.left,
+  #steps .row>.central,
+  #steps .row>.right {
+    width: calc(50% - 15px);
+  }
+
+  #steps .row>.left,
+  #steps .row>.central {
+    margin: 50px 5px;
+  }
+
+  #steps .row>.right {
+    float: none;
+    margin: auto;
+  }
+
+  img {
+    height: 150px;
+  }
+}
+
+/* media per smartphone */
 @media screen and (max-width: 420px) {
   body {
     font-size: 18px;
